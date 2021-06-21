@@ -1,16 +1,18 @@
-# import necessary libraries
-from flask import Flask, render_template
+import flask
+from flask.templating import render_template
+
+
 
 # create instance of Flask app
-app = Flask(__name__)
+app = flask.Flask(__name__)
 
 
 # create route that renders index.html template
-@app.route("/")
-def index():
-    team_list = ["Jumpers", "Dunkers", "Dribblers", "Passers"]
-    return render_template("index.html", list=team_list)
+@app.route('/', methods=['GET'])
+def home():
+    return render_template ('index.html')
 
 
-if __name__ == "__main__":
-    app.run(debug=True)
+if __name__ == '__main__':
+
+       app.run(threaded=True, port=5500)
