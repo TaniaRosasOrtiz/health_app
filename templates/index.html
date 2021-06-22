@@ -36,7 +36,7 @@
 						<div class="form-header">
 							<h1>Health App</h1>
 						</div>
-						<form>
+						<form action = "{{ url_for('result')}}" method = "post">
 							<div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
@@ -56,12 +56,12 @@
 								<input class="form-control" type="tel" name="phone" placeholder="Enter your phone number">
 							</div>
 							<div class="row">
-								<div class="col-sm-6">
+								<!-- <div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Pregnancies</span>
 										<input class="form-control" type="text" name="pregnancies" placeholder="Number of times pregnant">
 									</div>
-								</div>
+								</div> -->
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Glucose Level</span>
@@ -69,7 +69,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="row">
+							<!-- <div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Blood Pressure</span>
@@ -83,8 +83,8 @@
 									</div>
 								</div>
 
-							</div>
-							<div class="row">
+							</div> -->
+							<!-- <div class="row">
 								<div class="col-sm-6">
 									<div class="form-group">
 										<span class="form-label">Insulin</span>
@@ -98,7 +98,7 @@
 									</div>
 								</div>
 								
-							</div>
+							</div> -->
 							<div class="row">
 								<div class="col-sm-4">
 									<div class="form-group">
@@ -121,9 +121,10 @@
 								
 							</div>
 							<div class="form-btn">
-								<button type="submit" class="submit-btn">Get result</button>
+								<button type="submit" class="submit-btn" >Get result</button>
 							</div>
 						</form>
+					{{ prediction_text }}
 					</div>
 				</div>
 			</div>
