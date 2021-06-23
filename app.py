@@ -18,8 +18,8 @@ def home():
 def result():
     if request.method == 'POST':
         glucose = request.form['glucose']
-        weight = request.form['weight']
-        height = request.form['height']
+        weight = float(request.form['weight'])
+        height = float(request.form['height'])
         age = request.form['age']
         bmi = weight / (height**2)
         
