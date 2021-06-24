@@ -22,11 +22,12 @@ def result():
         height = float(request.form['height'])
         age = request.form['age']
         bmi = weight / (height**2)
+        name = request.form['name']
         
         user_data = np.array([[glucose,bmi, age]])
         new_prediction = classifier.predict(user_data)
 
-        return render_template('result.html', prediction = new_prediction)
+        return render_template('result.html', prediction = new_prediction, nameVariable = name)
 
 if __name__ == '__main__':
 
