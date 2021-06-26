@@ -13,7 +13,7 @@ app = Flask(__name__)
 @app.route('/')
 def home():
     return render_template ('index.html')
-
+# route for getting prediction results based on form inputs
 @app.route('/result', methods = ['POST'])
 def result():
     if request.method == 'POST':
