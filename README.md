@@ -18,11 +18,17 @@ Our main objective is to develop an app that helps the user to identify their ri
 # CONSTRUCTION OF THE APP 
 
 The first step we took was to analyze several factors that we found out that could determine strongly the prediction of having or getting diabetes. Those factors were:
+
   *Pregnancies
+
   *Glucose Level
+  
   *Blood Pressure
+  
   *Insulin Level
+  
   *Body Mass Index (BMI)
+  
   *Age
 
 After we analyzed those factors we came to the conclusion that age, BMI and glucose level were the most important factors that could determine if a user has a low or high risk of being a diabetic.  
