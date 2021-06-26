@@ -38,13 +38,21 @@ The analysis made can be found in the jupyter notebook data_exploration.ipynb
 The second step was to build the backend of the app where we trained a Random Forest Model with a dataset of 2000 entries in order to be able to get a prediction for our users. The model can be found in the script RandomForest_model.py
 
 The final step was to build the frontend in HTML with Bootstrap. The frontend consists of a form that should be filled by the user with these data: 
+      
       * Name
+      
       * Email
+      
       * Phone
+      
       * Glucose Level
+      
       * Weight
+      
       * Height 
+      
       * Age
+      
 After the user fills the form the prediction is made and the user is directed to a new page where the results are displayed.
 
 The form code can be fount in the index.html file and the results code can be found in the result.html. The app was created with Flask in the app.py file. 
