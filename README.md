@@ -58,3 +58,6 @@ After the user fills the form the prediction is made and the user is directed to
 The form code can be found in the index.html file and the results code can be found in the result.html. The app was created with Flask in the app.py file. 
 
 Finally we deployed our app using Heroku, the deployement can be found in the following link: https://health-diabetes-app.herokuapp.com/
+
+The site is best viewed using the current browser version of Firefox, Chrome and Safari or Internet Explorer 10 and higher.
+
