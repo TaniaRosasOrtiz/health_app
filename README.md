@@ -55,6 +55,6 @@ The final step was to build the frontend in HTML with Bootstrap. The frontend co
       
 After the user fills the form the prediction is made and the user is directed to a new page where the results are displayed.
 
-The form code can be fount in the index.html file and the results code can be found in the result.html. The app was created with Flask in the app.py file. 
+The form code can be found in the index.html file and the results code can be found in the result.html. The app was created with Flask in the app.py file. 
 
 Finally we deployed our app using Heroku, the deployement can be found in the following link: https://health-app-heroku.herokuapp.com/
