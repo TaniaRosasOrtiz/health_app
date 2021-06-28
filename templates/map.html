@@ -61,6 +61,9 @@
     }
   }
 
+  // Create an info window to share between markers
+  let infoWindow = new google.maps.InfoWindow()
+
   // Set markers at the location of each place result
   function createMarkers(places) {
     places.forEach(place => {
@@ -69,10 +72,16 @@
         map: map,
         title: place.name
       });
+      // Add a click listener for each marker, and set up the info window.
+    marker.addListener("click", () => {
+      infoWindow.close();
+      infoWindow.setContent(marker.getTitle());
+      infoWindow.open(marker.getMap(), marker);
+    });
+
     })
-    // To add the marker to the map, call setMap();
     }
-  };                 
+  };            
                 
   </script>
 
