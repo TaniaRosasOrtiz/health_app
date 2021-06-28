@@ -12,7 +12,7 @@
   <div id="navbar"><span>Search for healthy places to eat</span></div>
   <div id="wrapper">
     <button id="location-button">Get User Location</button>
-    <div id="googleMap" style="height: 400px;"></div>
+    <div id="googleMap" style="height: 400px; width: 60%;"></div>
   </div>
 
   <script>
@@ -48,6 +48,7 @@
     let request = {
       location: position,
       rankBy: google.maps.places.RankBy.DISTANCE,
+      fields: ["name", "formatted_address"],
       keyword: 'comida saludable'
       };
     service = new google.maps.places.PlacesService(map);
@@ -75,7 +76,8 @@
       // Add a click listener for each marker, and set up the info window.
     marker.addListener("click", () => {
       infoWindow.close();
-      infoWindow.setContent(marker.getTitle());
+      //infoWindow.setContent(marker.title);
+      infoWindow.setContent(marker.title );
       infoWindow.open(marker.getMap(), marker);
     });
 
@@ -84,9 +86,7 @@
   };            
                 
   </script>
-
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initialize&libraries=places">
-  </script>
-
+  <!-- GOOGLE MAPS SOURCE -->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzMysQ07iohR7lqodqb1ZnOd0xYcK0O80&callback=initialize&libraries=places"></script>
   </body>
 </html>

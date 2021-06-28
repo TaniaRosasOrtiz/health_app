@@ -135,3 +135,7 @@
 	border-radius: 3px;
 	text-transform: uppercase;
 }
+
+#googleMap {
+	margin-right: 20px;
+}
