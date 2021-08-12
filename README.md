@@ -1,4 +1,4 @@
-# HEALTH APP - TEAM 3
+# HEALTH APP | Diabetes Risk Identifier
 
 TEAM MEMBERS
 
